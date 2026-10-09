@@ -7,15 +7,16 @@
 </head>
 <body>
 <x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap&subset=vietnamese" rel="stylesheet">
 <style>
 html,body{margin:0;background:#F5F2EA;color:#141413;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:#9C5A47}a:hover{color:#141413}
 textarea::placeholder,input::placeholder{color:#8A867D}
 button:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid #D97757;outline-offset:2px}
-@keyframes sv-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes sv-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}Page_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_DownPage_Down
 @keyframes sv-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 </style>
 </helmet>
@@ -37,8 +38,7 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px soli
     <nav style="flex:none;display:flex;flex-direction:column;gap:4px">
       <sc-for list="{{ nav }}" as="item" hint-placeholder-count="4">
         <button onClick="{{ item.go }}" title="{{ item.label }}" style="display:flex;align-items:center;gap:12px;padding:12px 14px;border:none;border-radius:999px;background:{{ item.bg }};color:{{ item.color }};font:{{ item.weight }} 15px 'Inter',sans-serif;cursor:pointer;text-align:left;justify-content:{{ item.justify }}" style-hover="background:#EDE8DB">
-          <span style="width:20px;height:20px;display:flex;flex:none">{{ item.icon }}</span>
-          <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span>{{ item.label }}</span></sc-if>
+                    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span>{{ item.label }}</span></sc-if>
         </button>
       </sc-for>
     </nav>
@@ -47,7 +47,7 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px soli
       <div style="flex:none;background:#141413;color:#FFFFFF;border-radius:20px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:6px">
         <span style="font-weight:800;font-size:13px">{{ t.helpTitle }}</span>
         <span style="font-size:13px;line-height:1.5;color:#D8D3C8">{{ t.helpBody }}</span>
-        <a href="#" style="font-size:13px;font-weight:600;margin-top:4px;color:#F0A98B">{{ t.helpLink }}</a>
+        <a href="tel:111" style="font-size:13px;font-weight:600;margin-top:4px;color:#F0A98B">{{ t.helpLink }}</a>
       </div>
     </sc-if>
     <div style="flex:none;display:flex;gap:8px;flex-direction:{{ footDir }};align-items:stretch">
@@ -285,16 +285,16 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px soli
 <script type="text/x-dc" data-dc-script data-props="{&quot;startView&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;auth&quot;,&quot;chat&quot;,&quot;void&quot;,&quot;capsule&quot;,&quot;mood&quot;],&quot;default&quot;:&quot;chat&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;language&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;vi&quot;,&quot;en&quot;],&quot;default&quot;:&quot;vi&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;hugLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Send a hug 🤍&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 const ic = (paths) => React.createElement('svg', { width: 20, height: 20, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2.75, strokeLinecap: 'round', strokeLinejoin: 'round' }, paths.map((d, i) => React.createElement('path', { key: i, d })));
 const ICONS = {
-  chat: ic(['M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z']),
-  void: ic(['M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20', 'M12 8a4 4 0 1 0 0 8 4 4 0 1 0 0-8']),
-  capsule: ic(['M22 7 13.03 12.7a1.94 1.94 0 0 1-2.06 0L2 7', 'M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z']),
+    chat: ic(['M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z']),
+    void: ic(['M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20', 'M12 8a4 4 0 1 0 0 8 4 4 0 1 0 0-8']),
+      capsule: ic(['M22 7 13.03 12.7a1.94 1.94 0 0 1-2.06 0L2 7', 'M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z']),
   mood: ic(['M8 3 4 14h5l-1 7 8-11h-5l3-7z']),
 };
-const T = {
+  const T = {
   en: {
     tagline: 'a quiet place to land', nav1: 'Tiểu Long Chat', nav2: 'The Void', nav3: 'Time Capsule', nav4: 'Mood Tracker',
-    helpTitle: 'Need someone now?', helpBody: "Sovan is a companion, not a clinic. If you're in danger, call your local emergency line.", helpLink: 'Find a helpline →',
-    signIn: 'Sign in', signUp: 'Sign up',
+    helpTitle: 'Need someone now?', helpBody: "Sovan is a companion, not a clinic. If you're in danger, call 115. The 111 hotline (24/7, free) and Ngày Mai 096 306 1414 (crisis support, Wed–Sun 1–8:30pm) are here to listen too.", helpLink: 'Call the 111 hotline →',
+  signIn: 'Sign in', signUp: 'Sign up',
     chatSub: 'Ephemeral Chat', chatDesc: 'Your thoughts disappear when you close this tab.', nothingSaved: 'Nothing is saved',
     livesHere: 'This conversation lives only in this tab', listening: 'Tiểu Long is listening…', chatPh: "Say what's on your mind…", send: 'Send',
     chatFoot: "Close this tab and it's gone — for you and for us.",
@@ -319,8 +319,8 @@ const T = {
   },
   vi: {
     tagline: 'một nơi bình yên để trở về', nav1: 'Trò chuyện cùng Tiểu Long', nav2: 'Khoảng Lặng', nav3: 'Hộp Thời Gian', nav4: 'Theo Dõi Tâm Trạng',
-    helpTitle: 'Cần ai đó ngay lúc này?', helpBody: 'Sovan là người bạn đồng hành, không phải phòng khám. Nếu bạn đang gặp nguy hiểm, hãy gọi số khẩn cấp tại địa phương.', helpLink: 'Tìm đường dây hỗ trợ →',
-    signIn: 'Đăng nhập', signUp: 'Đăng ký',
+    helpTitle: 'Cần ai đó ngay lúc này?', helpBody: 'Sovan là người bạn đồng hành, không phải phòng khám. Nếu bạn đang gặp nguy hiểm, hãy gọi 115. Đường dây 111 (Tổng đài Quốc gia Bảo vệ Trẻ em, 24/7, miễn phí) và Ngày Mai 096 306 1414 (hỗ trợ khủng hoảng tâm lý, 13h–20h30 Thứ 4–CN) luôn sẵn sàng lắng nghe.', helpLink: 'Gọi đường dây 111 →',
+  signIn: 'Đăng nhập', signUp: 'Đăng ký',
     chatSub: 'Trò chuyện tức thời', chatDesc: 'Những suy nghĩ của bạn sẽ biến mất khi bạn đóng tab này.', nothingSaved: 'Không lưu gì cả',
     livesHere: 'Cuộc trò chuyện này chỉ tồn tại trong tab này', listening: 'Tiểu Long đang lắng nghe…', chatPh: 'Hãy nói điều bạn đang nghĩ…', send: 'Gửi',
     chatFoot: 'Đóng tab là mọi thứ biến mất — với bạn và cả với chúng tôi.',
