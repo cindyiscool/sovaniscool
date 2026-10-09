@@ -1,0 +1,21 @@
+{
+  "name": "sovan-web",
+  "version": "1.0.0",
+  "description": "Sovan - Mental Health Companion Platform (Web Application)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "build": "echo 'Static web application ready for deployment'"
+  },
+  "keywords": [
+    "mental-health",
+    "sovan",
+    "gemini-ai",
+    "firebase",
+    "firestore",
+    "vanilla-javascript"
+  ],
+  "author": "Sovan Team",
+  "license": "MIT"
+}

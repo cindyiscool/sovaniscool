@@ -1,0 +1,6 @@
+{
+  "name": "Sovan",
+  "description": "Sovan - A gentle mental health companion platform featuring Tiểu Vân AI, personal Second Brain, anonymous Void wall, daily mood tracker, and future time capsules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
